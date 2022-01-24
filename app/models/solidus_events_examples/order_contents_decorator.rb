@@ -1,3 +1,4 @@
+# app/models/solidus_events_examples/order_contents_decorator.rb
 module SolidusEventsExamples
   module OrderContentsDecorator
     def update_cart(params)

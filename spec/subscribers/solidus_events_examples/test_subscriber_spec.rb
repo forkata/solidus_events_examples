@@ -1,3 +1,4 @@
+# spec/subscribers/solidus_events_examples/test_subscriber_spec.rb
 require "rails_helper"
 
 RSpec.describe SolidusEventsExamples::TestSubscriber do
