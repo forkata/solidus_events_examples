@@ -1,7 +1,7 @@
-# app/subscribers/solidus_events_examples/custom_event_subscriber.rb
+# app/subscribers/solidus_events_examples/cart_event_subscriber.rb
 module SolidusEventsExamples
   # Test subscriber used to subscribe to a custom event.
-  module CustomEventSubscriber
+  module CartEventSubscriber
     include Spree::Event::Subscriber
 
     # Subscribes to the "cart_updated" custom event and calls a
@@ -10,8 +10,7 @@ module SolidusEventsExamples
 
     def cart_updated(event)
       if event.payload[:result]
-        puts "Cart for #{event.payload[:order].number} updated " \
-          "with #{event.payload[:params].inspect}"
+        puts "Cart for #{event.payload[:order].number} updated"
       end
     end
   end
