@@ -34,6 +34,8 @@ group :development, :test do
 
   # We like RSpec!
   gem "rspec-rails"
+
+  gem "factory_bot_rails"
 end
 
 group :development do
